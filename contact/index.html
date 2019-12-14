@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body class="flex">
+
+  <div class="topnav">
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+    <a href="/resume/">Resume</a>
+    <a href="../">Home</a>
+  </div>
+  
+  <header>
+    <h1>Contact</h1>
+  </header>
+  
+  <p>
+    <br><br>
+    Lets Connect!<br><br>
+    220 Gunson Street East Lansing, MI 48823<br>
+    arltmeag@msu.edu<br>
+    (989)-708-1741<br>
+    <br>
+  </p>
+
+  <div id = "map"></div>
+  <script>
+    var map = L.map('map').setView([0, 0], 1);
+    L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=bYtog4I19K8XtV10Az3g', { attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',}).addTo(map);
+    var marker = L.marker([42.73, -84.48]).addTo(map);
+  </script>
+
+</body>
+
+</html>

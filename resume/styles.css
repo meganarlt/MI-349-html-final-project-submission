@@ -1,0 +1,74 @@
+@media screen and (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+@media screen and (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+
+body {
+  background-color: rgb(37, 50, 65);
+}
+
+h1 {
+  color: rgb(37, 50, 65);
+  font-size: 60px;
+  font-family: "Helvetica Neue";
+  margin-left: 1em;
+}
+
+p {
+  color: rgb(245, 244, 240);
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Helvetica Neue";
+  text-decoration: none;
+  margin-left: 3.5em
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  width: 50%;
+}
+
+/*Navigation Bar*/
+
+/* Add a background color to the top navigation */
+
+.topnav {
+  background-color: rgb(245, 244, 240);
+  flex: 0 0 100%;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+  float: right;
+  color: rgb(37, 50, 65);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Helvetica Neue";
+  text-decoration: none;
+  margin-right: 1em
+}
+
+/* Flexbox */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex header {
+  background: rgb(245, 244, 240);
+  flex: 0 0 100%;
+}
